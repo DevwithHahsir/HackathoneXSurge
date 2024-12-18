@@ -1,0 +1,164 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar container */
+.navbar {
+  background-color: #333;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Heading inside navbar */
+.nav_heading {
+  font-size: 24px;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Nav items list container */
+.nav-items {
+  list-style-type: none;
+  display: flex;
+}
+
+/* Individual nav items */
+.nav-items li a {
+  color: #fff;
+  margin-left: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: larger;
+}
+
+/* Hover effect for nav items */
+.nav-items li:hover {
+  color: #ff6f61;
+  /* Light red color on hover */
+}
+
+/* For mobile responsiveness */
+@media (max-width: 768px) {
+  .nav-items {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-items li {
+    margin: 10px 0;
+  }
+}
+
+/* Body styling */
+.main-container {
+  font-family: Arial, sans-serif;
+  border: 3px solid;
+  border: 1px;
+  display: flex;
+  min-height: 100vh;
+
+  background-color: #f4f4f9;
+  /* Light background color */
+  overflow-x: hidden;
+}
+
+
+
+
+form {
+  width: 40rem;
+  position: relative;
+  left: 30%;
+  top: 10%;
+  margin-top: 10%;
+  height: max-content;
+  background: white;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styles */
+.heading {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.heading h1 {
+  font-size: 28px;
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* Form heading */
+form h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+/* Form input and button styles */
+form input,
+form button {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form button:hover {
+  background-color: #0056b3;
+  transform: scale(1.02);
+}
+
+form input::placeholder {
+  color: #999;
+  font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    /* Stack the carousel and form vertically */
+  }
+
+  .imgs, form {
+    width: 100%;
+  }
+
+  .carousel img {
+    height: 50vh;
+    /* Reduce carousel height on small screens */
+  }
+}
